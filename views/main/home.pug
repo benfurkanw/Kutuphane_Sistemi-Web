@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+head
+  meta(charset='utf-8')
+  title Anasayfa
+  meta(content='width=device-width, initial-scale=1.0' name='viewport')
+  meta(name='author' content='Furkan Demir')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9' crossorigin='anonymous')
+  link(rel='stylesheet' type='text/css' href='css/homestyle.css')
+body
+.full-page-div
+  h1.page-title Kütüphane Kullanıcı Giriş Paneli
+  .logo
+    img(src='img/belediyelogo.jpg' alt='Yuvarlak Logo')
+  if (isAuthenticated)
+    .square-div
+      p Şuanda #{username} Kullanıcısına giriş yapmış bulunmaktasınız farklı bir kullanıcı girişi için lütfen aşağıdaki çıkış yap butonuna basınız
+      a.btn.btn-outline-dark(href='/userhome') Kullanıcı Sayfası
+      a.btn.btn-outline-dark(href='/logout') Çıkış Yap
+  else
+     .square-div
+      button.button(onclick='toggleLogin()') Giriş Yap
+      button.button(onclick='toggleSingup()') Kayıt Ol
+      #loginForm.login-form
+        h2 Giriş Yap
+        form(action='/login' method='POST')
+          input#email.input-field(type='email' placeholder='E-posta' name='mail')
+          input#password.input-field(type='password' placeholder='Şifre' name='password')
+          button.button(type='submit') Giriş Yap
+        button.back-button(onclick='goBack()') Geri
+      #signupForm.signup-form
+        h2 Kayıt Ol
+        form(action = "/register" method = "POST")
+          input#fullName.input-field(type='text' placeholder='isim' name='isim')
+          input#fullName.input-field(type='text' placeholder='soyisim' name='soyisim')
+          input#username.input-field(type='text' placeholder='Kullanıcı Adı' name='username')
+          input#email.input-field(type='email' placeholder='E-posta' name='mail')
+          input#password.input-field(type='password' placeholder='Şifre' name='password')
+          button.button(type='submit' value='Save User' onclick='register()') Kayıt Ol
+        button.back-button(onclick='goBack()') Geri
+
+.footer
+  | Kartepe Belediyesi &copy; 2023
+
+
+script(src='js/homestyle.js')

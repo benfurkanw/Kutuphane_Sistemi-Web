@@ -1,0 +1,11 @@
+/* style.css */
+.book-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.book-card h2 {
+    margin-top: 0;
+}

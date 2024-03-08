@@ -1,0 +1,26 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../css/adminpanel3.css')
+  title Kitap Alım İşlemleri
+body
+    .book-list
+        each book in books
+            .book-card
+                h2= book.kitapisim
+                p
+                    strong Yazar:
+                    |  #{book.kitapyazar}
+                p
+                    strong Alan İsim:
+                    |  #{book.alanisim}
+                p
+                    strong Alan Soyisim:
+                    |  #{book.alansoyisim}
+                p
+                    strong Alınan Tarih:
+                    |  #{book.alınantarih}
+                p
+                    strong İade Tarih:
+                    |  #{book.iadetarih}

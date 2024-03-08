@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+  .user-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 190px;
+    text-align: center;
+    margin: 10px;
+  }
+  .user-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+  }
+  .user-name {
+    margin: 0;
+    color: #333;
+  }
+  .user-details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+  }

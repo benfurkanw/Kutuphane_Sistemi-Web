@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-wi7dth, initial-scale=1.0")
+        link(rel='stylesheet' type='text/css' href='../css/adminpanel1.css')
+        title Kullanıcı Hesapları
+body
+
+
+
+each user in users
+        .user-card
+            img.user-avatar(src='../img/profile.png' alt='Kullanıcı Resmi')
+            h2 #{user.username}
+            p İsim: #{user.isim}
+            p Soyisim: #{user.soyisim}
+            p Password: #{user.password}
+            p Mail: #{user.mail}
+            p id : #{user.id}
+            form(action='/admin/delete-product' method='POST')
+                                input(type="hidden" name='productid' value=`${user.id}`)
+                                button(type='submit').btn.btn-danger.btn-sm Delete
+
+
+script(src='../js/adminpanel1.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm' crossorigin='anonymous')

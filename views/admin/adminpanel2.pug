@@ -1,0 +1,143 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-wi7dth, initial-scale=1.0")
+        link(rel='stylesheet' type='text/css' href='../css/adminpanel2.css')
+        title Kullanıcı Oturumları
+body
+
+.container
+  .box-row
+    if (isAuthenticated)
+        .box2(data-info='Kutu 1') Masa 1
+            .info-content
+                p ID: #{userId}
+                p İsim : #{isim}
+                p Soy isim: #{soyisim}
+                p Kullanıcı adı : #{username}
+                p Email: #{email}
+    else 
+        .box(data-info='Kutu 1') Masa 1
+            .info-content
+                p Masa Boş
+
+    if (MasaNo == 2)
+        .box2(data-info='Kutu 2') Masa 2
+            .info-content
+                p ID: #{userId}
+                p İsim : #{isim}
+                p Soy isim: #{soyisim}
+                p Kullanıcı adı : #{username}
+                p Email: #{email}
+    else 
+        .box(data-info='Kutu 2') Masa 2
+            .info-content
+                p Masa Boş
+                
+    if (MasaNo == 3)
+        .box2(data-info='Kutu 3') Masa 3
+            .info-content
+                p ID: #{userId}
+                p İsim : #{isim}
+                p Soy isim: #{soyisim}
+                p Kullanıcı adı : #{username}
+                p Email: #{email}
+    else 
+        .box(data-info='Kutu 3') Masa 3
+            .info-content
+                p Masa Boş
+
+    if (MasaNo == 4)
+        .box2(data-info='Kutu 4') Masa 4
+            .info-content
+                p ID: #{userId}
+                p İsim : #{isim}
+                p Soy isim: #{soyisim}
+                p Kullanıcı adı : #{username}
+                p Email: #{email}
+    else 
+        .box(data-info='Kutu 4') Masa 4
+            .info-content
+                p Masa Boş
+
+    if (MasaNo == 5)
+        .box2(data-info='Kutu 5') Masa 5
+            .info-content
+                p ID: #{userId}
+                p İsim : #{isim}
+                p Soy isim: #{soyisim}
+                p Kullanıcı adı : #{username}
+                p Email: #{email}
+    else 
+        .box(data-info='Kutu 5') Masa 5
+            .info-content
+                p Masa Boş
+
+    if (MasaNo == 6)
+        .box2(data-info='Kutu 6') Masa 6
+            .info-content
+                p ID: #{userId}
+                p İsim : #{isim}
+                p Soy isim: #{soyisim}
+                p Kullanıcı adı : #{username}
+                p Email: #{email}
+    else 
+        .box(data-info='Kutu 6') Masa 6
+            .info-content
+                p Masa Boş
+
+    if (MasaNo == 7)
+        .box2(data-info='Kutu 7') Masa 7
+            .info-content
+                p ID: #{userId}
+                p İsim : #{isim}
+                p Soy isim: #{soyisim}
+                p Kullanıcı adı : #{username}
+                p Email: #{email}
+    else 
+        .box(data-info='Kutu 7') Masa 7
+            .info-content
+                p Masa Boş
+
+    if (MasaNo == 8)
+        .box2(data-info='Kutu 8') Masa 8
+            .info-content
+                p ID: #{userId}
+                p İsim : #{isim}
+                p Soy isim: #{soyisim}
+                p Kullanıcı adı : #{username}
+                p Email: #{email}
+    else 
+        .box(data-info='Kutu 8') Masa 8
+            .info-content
+                p Masa Boş
+
+    if (MasaNo == 9)
+        .box2(data-info='Kutu 9') Masa 9
+            .info-content
+                p ID: #{userId}
+                p İsim : #{isim}
+                p Soy isim: #{soyisim}
+                p Kullanıcı adı : #{username}
+                p Email: #{email}
+    else 
+        .box(data-info='Kutu 9') Masa 9
+            .info-content
+                p Masa Boş
+
+    if (MasaNo == 10)
+        .box2(data-info='Kutu 9') Masa 10
+            .info-content
+                p ID: #{userId}
+                p İsim : #{isim}
+                p Soy isim: #{soyisim}
+                p Kullanıcı adı : #{username}
+                p Email: #{email}
+    else 
+        .box(data-info='Kutu 10') Masa 10
+            .info-content
+                p Masa Boş
+
+script(src='../js/adminpanel2.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm' crossorigin='anonymous')

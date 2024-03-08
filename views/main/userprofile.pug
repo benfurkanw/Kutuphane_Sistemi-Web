@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet' type='text/css' href='css/userprofile.css')
+        title Kullanıcı Profili
+body
+.profile-container
+  .profile-name #{username}
+  .profile-info
+    p
+      strong İd:
+      | #{userId}
+    p
+      strong İsim:
+      | #{isim}
+    p
+      strong Soyisim
+      |  #{soyisim}
+    p
+      strong Password:
+      |  #{password}
+
+    p
+      strong Email:
+      |  #{email}
+
+    a.btn.btn-outline-dark(href='/userhome') Geri
+

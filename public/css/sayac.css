@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timer {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .buttons button#startStop {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+  }
+  
+  .buttons button#reset {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+  }
+  
+
+  .back-button {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .back-button button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .info-box {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .square:hover .info-box {
+    display: block;
+  }
